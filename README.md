@@ -83,3 +83,7 @@ A local Chrome extension that captures LinkedIn feed posts and appends them dire
 
 - Intended for private local use.
 - Do not publish with your personal OAuth client ID.
+
+
+## TO DO
+- Implement content pulling from timeline only

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>LinkedPin Saver</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>LinkedPin Saver</h1>
+      <p>Save the LinkedIn post in focus. Click inside a post for exact targeting.</p>
+      <button id="saveBtn">Save Post to Google Docs</button>
+
+      <button id="toggleSettingsBtn" class="secondary" type="button">Show Settings</button>
+      <section id="settingsSection" class="hidden" aria-label="Settings">
+        <label for="docIdInput">Google Doc ID</label>
+        <input id="docIdInput" type="text" placeholder="1AbCdEf..." />
+        <button id="saveDocIdBtn" class="secondary" type="button">Save Doc ID</button>
+        <p id="docHint" class="hint"></p>
+      </section>
+
+      <p id="status" aria-live="polite"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

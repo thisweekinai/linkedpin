@@ -1,0 +1,94 @@
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-width: 300px;
+  background: #f5f8fb;
+  color: #1f2937;
+}
+
+main {
+  padding: 14px;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px;
+  background: #0a66c2;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #004182;
+}
+
+button.secondary {
+  background: #334155;
+}
+
+button.secondary:hover {
+  background: #0f172a;
+}
+
+#toggleSettingsBtn {
+  margin-top: 8px;
+}
+
+#settingsSection {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #dbe3ef;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+#settingsSection.hidden {
+  display: none;
+}
+
+.hint {
+  margin: 0;
+  color: #475569;
+  font-size: 12px;
+}
+
+#status {
+  min-height: 18px;
+  margin-top: 10px;
+  font-size: 12px;
+}

@@ -38,10 +38,11 @@ A local Chrome extension that captures LinkedIn feed posts and appends them dire
 
 1. Open `chrome://extensions`.
 2. Enable `Developer mode`.
-3. Click `Load unpacked`.
-4. Select `/Users/hasime/linkedpin/extension`.
-5. Open `/Users/hasime/linkedpin/extension/manifest.json`.
-6. Replace `REPLACE_WITH_YOUR_CHROME_EXTENSION_OAUTH_CLIENT_ID` with your OAuth client ID.
+3. Create `.env.local` with your OAuth client ID:
+   - `GOOGLE_CLIENT_ID=your-client-id.apps.googleusercontent.com`
+4. Run `npm run build` from project root to generate `extension/manifest.json`.
+5. Click `Load unpacked`.
+6. Select `/Users/hasime/linkedpin/extension`.
 7. Go back to `chrome://extensions`.
 8. Click `Reload` on LinkedPin Saver.
 
@@ -53,9 +54,10 @@ A local Chrome extension that captures LinkedIn feed posts and appends them dire
 3. Click `Show Settings`.
 4. Paste Doc ID and click `Save Doc ID`.
 5. Open LinkedIn feed page.
-6. Click inside a post for exact targeting (optional now, but recommended).
-7. Click extension icon -> `Save Post to Google Docs`.
-8. Complete Google OAuth prompt on first run.
+6. Select any text inside the target post on LinkedIn timeline.
+7. Right-click the selected text.
+8. Click `Save selected post to Google Docs`.
+9. Complete Google OAuth prompt on first run.
 
 ## Known bugs and resolutions
 
